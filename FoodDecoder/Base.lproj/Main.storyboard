@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10109" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodDecoder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlS-gs-uFD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XZd-UK-mhO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5oq-Q5-4Ua"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iQ-1G-MDD">
+                                <rect key="frame" x="20" y="512" width="560" height="80"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="J1t-tt-DjG">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERy-TX-TFq">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ERy-TX-TFq" secondAttribute="trailing" id="ROG-aw-Vdx"/>
+                                        <constraint firstItem="ERy-TX-TFq" firstAttribute="leading" secondItem="J1t-tt-DjG" secondAttribute="leading" id="VSO-b4-dB3"/>
+                                        <constraint firstAttribute="bottom" secondItem="ERy-TX-TFq" secondAttribute="bottom" id="bId-3X-LPI"/>
+                                        <constraint firstItem="ERy-TX-TFq" firstAttribute="top" secondItem="J1t-tt-DjG" secondAttribute="top" id="pj5-bW-NBm"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="mS5-jl-8OF"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zle-Av-d2o">
+                                <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                <color key="backgroundColor" red="0.45230087619999998" green="1" blue="0.50338676869999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qB9-IL-eJm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6iQ-1G-MDD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2er-lt-wCf"/>
+                            <constraint firstItem="6iQ-1G-MDD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6DL-jV-sBN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6iQ-1G-MDD" secondAttribute="bottom" constant="8" id="7Pq-dt-UtA"/>
+                            <constraint firstItem="6iQ-1G-MDD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8AS-Gs-MYQ"/>
+                            <constraint firstItem="dlS-gs-uFD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EeJ-3T-tbb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6iQ-1G-MDD" secondAttribute="bottom" constant="8" id="QwE-qL-Hpe"/>
+                            <constraint firstItem="6iQ-1G-MDD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WFH-tg-smZ"/>
+                            <constraint firstItem="Zle-Av-d2o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cu1-j3-DFf"/>
+                            <constraint firstItem="dlS-gs-uFD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gPy-cY-yjN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dlS-gs-uFD" secondAttribute="trailing" constant="-20" id="gih-0t-Psn"/>
+                            <constraint firstItem="Zle-Av-d2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jSY-hu-hXh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zle-Av-d2o" secondAttribute="trailing" constant="-20" id="znN-Ld-4Pe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activeZoneView" destination="Zle-Av-d2o" id="oW8-sG-CMM"/>
+                        <outlet property="infoLabel" destination="ERy-TX-TFq" id="74Y-xw-FkV"/>
+                        <outlet property="infoLabelBackground" destination="6iQ-1G-MDD" id="sJ1-gX-3zi"/>
+                        <outlet property="statusBarBackground" destination="dlS-gs-uFD" id="LJx-5s-Z35"/>
+                        <segue destination="bwg-k5-ImM" kind="popoverPresentation" identifier="DetailFoodViewSegue" popoverAnchorView="ERy-TX-TFq" id="Oqj-1I-84N">
+                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="415"/>
+        </scene>
+        <!--Food Detail View Controller-->
+        <scene sceneID="xtB-wl-Mkl">
+            <objects>
+                <viewController storyboardIdentifier="DetailFoodViewController" id="bwg-k5-ImM" customClass="FoodDetailViewController" customModule="FoodDecoder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b7y-VJ-kEf"/>
+                        <viewControllerLayoutGuide type="bottom" id="J5N-G7-AtA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="skU-bs-FGn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5s-X8-TR3">
+                                <rect key="frame" x="0.0" y="20" width="600" height="534"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FF-Ve-v25">
+                                <rect key="frame" x="543" y="562" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="dismiss" destination="WEf-vS-ll2" eventType="touchUpInside" id="nPZ-nz-mYL"/>
+                                    <action selector="restartSession" destination="WEf-vS-ll2" eventType="touchUpInside" id="RXB-Nt-SNA"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-cw-ZVZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nrg-7a-LGJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="q4h-ee-MHc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="vHb-o9-5Gp"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93725490196078431" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d5s-X8-TR3" firstAttribute="leading" secondItem="skU-bs-FGn" secondAttribute="leadingMargin" constant="-20" id="14V-se-xEf"/>
+                            <constraint firstItem="gw7-cw-ZVZ" firstAttribute="leading" secondItem="skU-bs-FGn" secondAttribute="leadingMargin" constant="-20" id="Bsq-Vy-7QX"/>
+                            <constraint firstItem="2FF-Ve-v25" firstAttribute="top" secondItem="d5s-X8-TR3" secondAttribute="bottom" constant="8" id="CXT-nK-8Jw"/>
+                            <constraint firstItem="2FF-Ve-v25" firstAttribute="trailing" secondItem="skU-bs-FGn" secondAttribute="trailingMargin" id="K0m-fH-FWJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gw7-cw-ZVZ" secondAttribute="trailing" constant="-20" id="MKj-GL-ezX"/>
+                            <constraint firstItem="d5s-X8-TR3" firstAttribute="top" secondItem="b7y-VJ-kEf" secondAttribute="bottom" id="POK-b3-uNU"/>
+                            <constraint firstItem="J5N-G7-AtA" firstAttribute="top" secondItem="2FF-Ve-v25" secondAttribute="bottom" constant="8" id="agt-TE-F7B"/>
+                            <constraint firstItem="d5s-X8-TR3" firstAttribute="top" secondItem="skU-bs-FGn" secondAttribute="topMargin" constant="20" id="dtn-AG-UWc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5s-X8-TR3" secondAttribute="trailing" constant="-20" id="emH-gw-j49"/>
+                            <constraint firstItem="gw7-cw-ZVZ" firstAttribute="top" secondItem="skU-bs-FGn" secondAttribute="topMargin" id="qR1-SX-Uya"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dtn-AG-UWc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="_doneButton" destination="2FF-Ve-v25" id="LN5-jb-VDa"/>
+                        <outlet property="_webView" destination="d5s-X8-TR3" id="gbI-Sf-U5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEf-vS-ll2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933" y="415"/>
+        </scene>
+    </scenes>
+</document>
